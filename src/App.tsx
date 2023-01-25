@@ -59,7 +59,7 @@ function LinkButtons() {
   return (
     <Stack direction="row" spacing={2} sx={{ pt: 5 }}>
       <Button href="https://github.com/Pomoc48" target="_blank" >Github</Button>
-      <Button href="#text-buttons" disabled>Linkedin</Button>
+      <Button href="#" disabled>Linkedin</Button>
     </Stack>
   )
 }
