@@ -11,3 +11,12 @@ body {
         background-size: 500px;
     }
 }
+
+@media only screen and (min-width: 700px) {
+    #root {
+        background-image: url("background-top.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 400px;
+    }
+}

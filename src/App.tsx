@@ -31,7 +31,7 @@ export default App;
 function PageTitle() {
   return (
     <Box>
-      <Typography>Hi, my name is</Typography>
+      <Typography color={teal[500]}>Hi, my name is</Typography>
       <Typography variant="h2" sx={{ pt: 1 }}>Mikołaj Łukawski</Typography>
     </Box>
   );
@@ -58,8 +58,8 @@ function Description() {
 function LinkButtons() {
   return (
     <Stack direction="row" spacing={2} sx={{ pt: 5 }}>
-      <Button href="https://github.com/Pomoc48" target="_blank" >Github</Button>
-      <Button href="#" disabled>Linkedin</Button>
+      <Button variant="outlined" href="https://github.com/Pomoc48" target="_blank" >Github</Button>
+      <Button variant="outlined" href="#" disabled>Linkedin</Button>
     </Stack>
   )
 }

@@ -7,7 +7,7 @@
    viewBox="0 0 169.33333 169.33333"
    version="1.1"
    id="svg5"
-   sodipodi:docname="background.svg"
+   sodipodi:docname="background-top.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:lockguides="false"
-     inkscape:zoom="0.36614057"
-     inkscape:cx="228.05449"
-     inkscape:cy="335.93655"
+     inkscape:zoom="0.25890048"
+     inkscape:cx="666.27918"
+     inkscape:cy="339.89894"
      inkscape:window-width="1920"
      inkscape:window-height="1002"
      inkscape:window-x="0"
@@ -41,31 +41,31 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:none;stroke:#00695c;stroke-width:8;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847199;stop-color:#000000"
+       style="fill:none;stroke:#00695c;stroke-width:16;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847199;stop-color:#000000"
        id="path12731"
-       cx="169.96034"
-       cy="169.16811"
+       cx="-46.495247"
+       cy="-63.930729"
        rx="145.07623"
        ry="153.31709" />
     <ellipse
-       style="fill:none;stroke:#00897a;stroke-width:6.00001;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.85088;stop-color:#000000"
+       style="fill:none;stroke:#00897a;stroke-width:12;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.85088;stop-color:#000000"
        id="path11217"
-       cx="160.25529"
-       cy="158.09016"
+       cx="-51.822464"
+       cy="-28.392601"
        rx="140.57716"
        ry="145.27029" />
     <ellipse
-       style="fill:none;stroke:#26a699;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000"
+       style="fill:none;stroke:#26a699;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000"
        id="path10430"
-       cx="164.75702"
-       cy="168.24191"
+       cx="-53.323067"
+       cy="-62.326481"
        rx="130.31662"
        ry="161.99428" />
     <ellipse
-       style="fill:none;stroke:#80cbc4;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000"
+       style="fill:none;stroke:#80cbc4;stroke-width:6;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000"
        id="path8245"
-       cx="161.90822"
-       cy="176.66875"
+       cx="-50.734417"
+       cy="-48.3158"
        rx="151.12184"
        ry="151.08655" />
   </g>
