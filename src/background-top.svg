@@ -26,7 +26,7 @@
      showgrid="false"
      inkscape:lockguides="false"
      inkscape:zoom="0.25890048"
-     inkscape:cx="666.27918"
+     inkscape:cx="523.36713"
      inkscape:cy="339.89894"
      inkscape:window-width="1920"
      inkscape:window-height="1002"
@@ -35,34 +35,87 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter39724"
+       x="-0.040877311"
+       y="-0.038680138"
+       width="1.0817546"
+       height="1.0773603">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.6086053"
+         id="feGaussianBlur39726" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter39728"
+       x="-0.035072029"
+       y="-0.033938985"
+       width="1.0701441"
+       height="1.067878">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.6086053"
+         id="feGaussianBlur39730" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter39732"
+       x="-0.033996633"
+       y="-0.027348659"
+       width="1.0679933"
+       height="1.0546973">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.6086053"
+         id="feGaussianBlur39734" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter39736"
+       x="-0.022699077"
+       y="-0.022704379"
+       width="1.0453982"
+       height="1.0454088">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.6086053"
+         id="feGaussianBlur39738" />
+    </filter>
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:none;stroke:#00695c;stroke-width:16;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847199;stop-color:#000000"
+       style="fill:none;stroke:#00695c;stroke-width:16;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847199;stop-color:#000000;opacity:0.5;filter:url(#filter39724)"
        id="path12731"
        cx="-46.495247"
        cy="-63.930729"
        rx="145.07623"
        ry="153.31709" />
     <ellipse
-       style="fill:none;stroke:#00897a;stroke-width:12;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.85088;stop-color:#000000"
+       style="fill:none;stroke:#00897a;stroke-width:12;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.85088;stop-color:#000000;opacity:0.5;filter:url(#filter39728)"
        id="path11217"
        cx="-51.822464"
        cy="-28.392601"
        rx="140.57716"
        ry="145.27029" />
     <ellipse
-       style="fill:none;stroke:#26a699;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000"
+       style="fill:none;stroke:#26a699;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000;opacity:0.5;filter:url(#filter39732)"
        id="path10430"
        cx="-53.323067"
        cy="-62.326481"
        rx="130.31662"
        ry="161.99428" />
     <ellipse
-       style="fill:none;stroke:#80cbc4;stroke-width:6;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000"
+       style="fill:none;stroke:#80cbc4;stroke-width:6;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000;opacity:0.5;filter:url(#filter39736)"
        id="path8245"
        cx="-50.734417"
        cy="-48.3158"
