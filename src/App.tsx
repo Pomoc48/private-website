@@ -60,7 +60,7 @@ function Description() {
 
 function LinkButtons() {
   return (
-    <Stack direction="row" spacing={2} sx={{ pt: 5 }}>
+    <Stack direction="row" spacing={2} sx={{ py: 5 }}>
       <Button variant="outlined" href="https://github.com/Pomoc48" target="_blank" >Github</Button>
       <Button variant="outlined" href="#" disabled>Linkedin</Button>
     </Stack>
