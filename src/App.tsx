@@ -1,14 +1,37 @@
 import './App.css';
 import { Typography, Container, Box } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { useEffect, useState } from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+function App(params: { themeMode: boolean }) {
+  const [darkMode, setMode] = useState(params.themeMode);
+
+  useEffect(() => {
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', event => {
+        setMode(event.matches ? true : false);
+      });
+  });
+
+  console.log(darkMode);
+
+  const theme = createTheme({
+    palette: {
+      mode: darkMode ? 'dark' : 'light',
+    },
+  })
+
   return (
-    <Box>
-      <TopBar text='Mikołaj Łukawski' />
-      <Container>
-        <PageTitle text='Hello world!' />
-      </Container>
-    </Box>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box>
+        <TopBar text='Mikołaj Łukawski' />
+        <Container>
+          <PageTitle text='Hello world!' />
+        </Container>
+      </Box>
+    </ThemeProvider>
   );
 }
 
