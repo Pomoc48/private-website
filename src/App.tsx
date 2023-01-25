@@ -1,34 +1,25 @@
 import './App.css';
-import { Typography, Container, Box } from '@mui/material';
+import { Typography, Container, Box, Stack, Button } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { useEffect, useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
+import teal from '@mui/material/colors/teal';
 
-function App(params: { themeMode: boolean }) {
-  const [darkMode, setMode] = useState(params.themeMode);
-
-  useEffect(() => {
-    window.matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', event => {
-        setMode(event.matches ? true : false);
-      });
-  });
-
-  console.log(darkMode);
-
+function App() {
   const theme = createTheme({
     palette: {
-      mode: darkMode ? 'dark' : 'light',
+      mode: 'dark',
+      primary: teal,
     },
   })
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box>
-        <TopBar text='Mikołaj Łukawski' />
-        <Container>
-          <PageTitle text='Hello world!' />
+      <Box className="PageContent">
+        <Container sx={{ my: 4 }}>
+          <PageTitle />
+          <Description />
+          <LinkButtons />
         </Container>
       </Box>
     </ThemeProvider>
@@ -37,22 +28,38 @@ function App(params: { themeMode: boolean }) {
 
 export default App;
 
-function PageTitle(props: { text: string }) {
+function PageTitle() {
   return (
-    <Typography variant="h2" sx={{ py: 8 }}>
-      {props.text}
-    </Typography>
+    <Box>
+      <Typography>Hi, my name is</Typography>
+      <Typography variant="h2" sx={{ pt: 1 }}>Mikołaj Łukawski</Typography>
+    </Box>
   );
 }
 
-function TopBar(props: { text: string }) {
+function Description() {
   return (
-    <Box className="TopBar">
-      <Container>
-        <Typography variant="h5" sx={{ py: 3 }} >
-          {props.text}
-        </Typography>
-      </Container>
+    <Box sx={{ maxWidth: 600 }}>
+      <Typography sx={{ pt: 5 }}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Varius quam quisque id diam vel quam elementum pulvinar.
+        Quam vulputate dignissim suspendisse in est ante in nibh mauris.
+        Porttitor eget dolor morbi non arcu risus quis varius quam.
+      </Typography>
+      <Typography sx={{ pt: 2 }}>
+        Eu facilisis sed odio morbi quis commodo.
+        Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit.
+        Tellus cras adipiscing enim eu.
+      </Typography>
     </Box>
   );
+}
+
+function LinkButtons() {
+  return (
+    <Stack direction="row" spacing={2} sx={{ pt: 5 }}>
+      <Button href="https://github.com/Pomoc48" target="_blank" >Github</Button>
+      <Button href="#text-buttons" disabled>Linkedin</Button>
+    </Stack>
+  )
 }

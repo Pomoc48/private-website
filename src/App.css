@@ -1,3 +1,11 @@
 .TopBar {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.PageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}

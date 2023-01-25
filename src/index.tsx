@@ -8,13 +8,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-function isDarkMode(): boolean {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
-
 root.render(
   <React.StrictMode>
-    <App themeMode={isDarkMode()} />
+    <App />
   </React.StrictMode>
 );
 
