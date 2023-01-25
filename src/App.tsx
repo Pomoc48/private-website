@@ -3,11 +3,14 @@ import { Typography, Container, Box, Stack, Button } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import teal from '@mui/material/colors/teal';
+import { useState } from 'react';
 
-function App() {
+function App(params: { themeMode: boolean }) {
+  const [darkMode] = useState(params.themeMode);
+
   const theme = createTheme({
     palette: {
-      mode: 'dark',
+      mode: darkMode ? 'dark' : 'light',
       primary: teal,
     },
   })
@@ -15,7 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box className="PageContent">
+      <Box className="PageContainer">
         <Container sx={{ my: 4 }}>
           <PageTitle />
           <Description />
