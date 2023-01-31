@@ -9,3 +9,65 @@
     flex-wrap: wrap;
     height: 100vh;
 }
+
+.Circles {
+    position: fixed;
+    top: calc(50% - 320px);
+    left: calc(75% - 320px);
+    filter: blur(2px);
+}
+
+.C1 {
+    z-index: 4;
+    position: absolute;
+    animation-name: clockwise;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+}
+
+.C2 {
+    z-index: 3;
+    position: absolute;
+    animation-name: counter-clockwise;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.C3 {
+    z-index: 2;
+    position: absolute;
+    animation-name: counter-clockwise;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+.C4 {
+    z-index: 1;
+    position: absolute;
+    animation-name: clockwise;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+
+@keyframes clockwise {
+    0% {transform: rotate(0deg) translate(0px, 0px) scale(1, 1);}
+    25% {transform: rotate(90deg) translate(0px, -20px) scale(1.05, 1.05);}
+    50% {transform: rotate(180deg) translate(0px, 0px) scale(1.1, 1.1);}
+    75% {transform: rotate(270deg) translate(0px, 20px) scale(1.05, 1.05);}
+    100% {transform: rotate(360deg) translate(0px, 0px) scale(1, 1);}
+}
+
+@keyframes counter-clockwise {
+    0% {transform: rotate(0deg) translate(0px, 0px) scale(1, 1);}
+    25% {transform: rotate(-90deg) translate(20px, 0px) scale(0.95, 0.95);}
+    50% {transform: rotate(-180deg) translate(0px, 0px) scale(0.9, 0.9);}
+    75% {transform: rotate(-270deg) translate(-20px, 0px) scale(0.95, 0.95);}
+    100% {transform: rotate(-360deg) translate(0px, 0px) scale(1, 1);}
+}

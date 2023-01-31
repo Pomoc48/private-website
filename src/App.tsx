@@ -4,6 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import teal from '@mui/material/colors/teal';
 import { useState } from 'react';
+import Circle from './Circle';
 
 function App(params: { themeMode: boolean }) {
   const [darkMode] = useState(params.themeMode);
@@ -23,6 +24,7 @@ function App(params: { themeMode: boolean }) {
           <PageTitle />
           <Description />
           <LinkButtons />
+          <Circle />
         </Container>
       </Box>
     </ThemeProvider>
