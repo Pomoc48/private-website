@@ -14,7 +14,7 @@ function isDarkMode(): boolean {
 
 root.render(
   <React.StrictMode>
-    <App themeMode={isDarkMode()} />
+    <App themeMode={true} />
   </React.StrictMode>
 );
 

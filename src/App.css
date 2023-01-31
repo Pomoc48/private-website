@@ -14,44 +14,46 @@
     position: fixed;
     top: calc(50% - 320px);
     left: calc(75% - 320px);
-    filter: blur(2px);
+    filter: blur(1px);
+    opacity: 0.75;
+    z-index: -1;
+    width: 50%;
+    min-width: 320px;
+}
+
+.C0 {
+    position: absolute;
+    width: 100%;
+    animation-iteration-count: infinite;
 }
 
 .C1 {
     z-index: 4;
-    position: absolute;
     animation-name: clockwise;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
     animation-timing-function: ease;
     animation-delay: 0.5s;
 }
 
 .C2 {
     z-index: 3;
-    position: absolute;
     animation-name: counter-clockwise;
     animation-duration: 6s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .C3 {
     z-index: 2;
-    position: absolute;
     animation-name: counter-clockwise;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-delay: 1s;
 }
 
 .C4 {
     z-index: 1;
-    position: absolute;
     animation-name: clockwise;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
     animation-timing-function: ease;
 }
 

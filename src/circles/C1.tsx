@@ -1,7 +1,7 @@
 function C1() {
   return (
     <svg
-      className="C1"
+      className="C1 C0"
       xmlns="http://www.w3.org/2000/svg"
       width="640"
       height="640"

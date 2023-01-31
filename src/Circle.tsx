@@ -9,17 +9,15 @@ function Circle() {
   const [style, updatePercent] = useState({});
 
   onmousemove = function (e) {
-    let frac = e.clientX / window.innerWidth;
+    let wFrac = e.clientX / window.innerWidth;
+    let hFrac = e.clientY / window.innerHeight;
 
-    let scale = 0.8 + (frac * 0.8);
-    let position = (640 * scale) / 2;
-    let blur = (frac * 4) + 1;
+    let top = (0.4 + (hFrac * 0.2)) * 100;
+    let left = (0.65 + (wFrac * 0.2)) * 100;
 
     updatePercent({
-      transform: "scale(" + scale + ")",
-      top: "calc(50% - " + position + "px)",
-      left: "calc(75% - " + position + "px)",
-      filter: "blur(" + blur + "px)",
+      top: "calc(" + top + "% - 320px)",
+      left: "calc(" + left + "% - 320px)",
     })
   }
 
