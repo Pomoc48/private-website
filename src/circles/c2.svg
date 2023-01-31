@@ -9,6 +9,9 @@
    id="svg5"
    sodipodi:docname="background.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="circles/c2.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -55,14 +58,14 @@
        r="71.000008"
        inkscape:label="c3" />
     <circle
-       style="display:none;opacity:0.499528;fill:none;stroke:#26a699;stroke-width:4.99998;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000"
+       style="display:inline;opacity:0.499528;fill:none;stroke:#26a699;stroke-width:4.99998;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.847363;stop-color:#000000"
        id="path10430"
        cx="86.436829"
        cy="90.187653"
        r="71.500008"
        inkscape:label="c2" />
     <circle
-       style="display:inline;opacity:0.499528;fill:none;stroke:#80cbc4;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000"
+       style="display:none;opacity:0.499528;fill:none;stroke:#80cbc4;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.845691;stop-color:#000000"
        id="path8245"
        cx="79.644592"
        cy="87.041878"
