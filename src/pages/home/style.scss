@@ -1,0 +1,24 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    
+    p.headline-medium {
+        margin: 0;
+    }
+}
+
+main {
+    height: 100dvh;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+    article {
+        width: 50%;   
+    }
+}
