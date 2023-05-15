@@ -1,0 +1,64 @@
+$mobileSnap: 768px;
+$pageWidth: 1200px;
+$navbarHeight: 80px;
+
+@mixin ResponsiveLayout {
+    width: $pageWidth;
+    margin-inline: auto;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $pageWidth) {
+        width: 100%;
+    }
+}
+
+@mixin Clickable {
+    user-select: none;
+    cursor: pointer;
+}
+
+@mixin Button {
+    all: unset;
+    display: flex;
+    @include Clickable;
+    color: var(--md-sys-color-on-primary);
+    height: 40px;
+    gap: 8px;
+    padding-inline: 24px;
+    border-radius: 40px;
+    transition: 0.3s;
+    align-items: center;
+
+    p {
+        margin: 0 !important;
+    }
+
+    .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.icon {
+        padding-left: 18px;
+    }
+
+    &.text {
+        color: var(--md-sys-color-primary);
+
+        &:hover {
+            background-color: var(--md-sys-elevation-5);
+        }
+    }
+
+    &.tonal {
+        background-color: var(--md-sys-elevation-2);
+        color: var(--md-sys-color-primary);
+
+        &:hover {
+            background-color: var(--md-sys-elevation-5);
+        }
+    }
+}

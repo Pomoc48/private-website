@@ -3,3 +3,5 @@
 @import url(typography.module.css);
 @import url(theme.light.css) (prefers-color-scheme: light);
 @import url(theme.dark.css) (prefers-color-scheme: dark);
+@import url(elevation.light.css) (prefers-color-scheme: light);
+@import url(elevation.dark.css) (prefers-color-scheme: dark);

@@ -1,0 +1,41 @@
+@use "../../css-values.scss";
+
+.elevated {
+    background-color: var(--md-sys-elevation-2);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: css-values.$navbarHeight;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+    div.container {
+        display: flex;
+        height: 100%;
+        padding-inline: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        @include css-values.ResponsiveLayout;
+
+        p.headline-small {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: css-values.$mobileSnap) {
+    header {
+        div.container {
+            padding: 1rem;
+        }
+    }
+}

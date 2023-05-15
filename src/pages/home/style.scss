@@ -1,24 +1,55 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem;
-    
-    p.headline-medium {
-        margin: 0;
+@use "../../css-values.scss";
+
+main {
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    @include css-values.ResponsiveLayout;
+
+    @supports (height: 100dvh) {
+        height: 100dvh;
+    }
+
+    article {
+        flex-grow: 1;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p.label-large {
+            margin-bottom: 4px;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    img {
+        border-radius: 999px;
     }
 }
 
-main {
-    height: 100dvh;
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    
-    article {
-        width: 50%;   
+@media screen and (max-width: css-values.$mobileSnap) {
+    main {
+        flex-direction: column;
+        height: auto;
+        margin-top: css-values.$navbarHeight;
+        padding: 1rem;
+
+        article {
+            flex-grow: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
