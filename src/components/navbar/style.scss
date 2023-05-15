@@ -21,6 +21,12 @@ header {
         justify-content: space-between;
         @include css-values.ResponsiveLayout;
 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
         p.headline-small {
             margin: 0;
         }

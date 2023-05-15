@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "../../assets/logo.svg";
 import "./style.scss";
 
 export default function Navbar() {
@@ -22,7 +23,11 @@ export default function Navbar() {
     return (
         <header className={elevated ? "surface elevated" : "surface"}>
             <div className="container">
-                <p className="on-surface-text headline-small">mLukawski</p>
+                <div>
+                    <img src={Logo} alt="" height={40} />
+                    <p className="primary-text title-large">mLukawski</p>
+                </div>
+
                 <nav>
                     <a className="text icon" href="https://github.com/Pomoc48">
                         <span className="material-symbols-outlined">code</span>
