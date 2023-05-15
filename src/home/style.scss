@@ -1,0 +1,135 @@
+@use "../css-values.scss";
+
+main {
+    height: 100vh;
+    display: flex;
+    padding-inline: 2rem;
+    gap: 2rem;
+    align-items: center;
+    @include css-values.ResponsiveLayout;
+
+    @supports (height: 100dvh) {
+        height: 100dvh;
+    }
+
+    article {
+        flex-grow: 1;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p.label-large {
+            margin-bottom: 4px;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    img {
+        border-radius: 999px;
+    }
+}
+
+div.divider-container {
+    padding-inline: 2rem;
+    @include css-values.ResponsiveLayout;
+
+    div.divider {
+        height: 1px;
+    }
+}
+
+section {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    padding-inline: 2rem;
+    @include css-values.ResponsiveLayout;
+
+    h2 {
+        margin-bottom: 5rem;
+    }
+
+    div.gallery {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr);
+
+        div.card {
+            width: 100%;
+            border-radius: 20px;
+            height: min-content;
+            transition: 0.3s;
+            background-color: var(--md-sys-elevation-2);
+
+            img {
+                width: inherit;
+                object-fit: cover;
+                aspect-ratio: 1.4 / 1;
+                height: auto;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            div.details {
+                padding: 1.2rem;
+
+                h3 {
+                    margin: 0;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                a {
+                    width: fit-content;
+                }
+            }
+
+            &:hover {
+                background-color: var(--md-sys-elevation-5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: css-values.$mobileSnap) {
+    main {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: css-values.$navbarHeight;
+        padding: 1rem;
+
+        article {
+            flex-grow: 0;
+        }
+
+        img {
+            margin-top: 2rem;
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    div.divider-container {
+        padding-inline: 1rem;
+        margin-top: 4rem;
+    }
+
+    section {
+        padding-inline: 1rem;
+        margin: 4rem 0;
+
+        div.gallery {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+}

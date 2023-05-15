@@ -1,0 +1,24 @@
+@use "../../css-values.scss";
+
+footer {
+    background-color: var(--md-sys-elevation-2);
+    height: 64px;
+
+    div.container {
+        @include css-values.ResponsiveLayout;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (max-width: css-values.$mobileSnap) {
+    footer {
+        height: auto;
+
+        div.container {
+            padding: 1rem;
+        }
+    }
+}

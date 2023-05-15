@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import Logo from "../../assets/logo.svg";
 import "./style.scss";
+import { verticalScroll } from "../../functions/scroll";
 
 export default function Navbar() {
     const [elevated, setElevated] = useState(false);
+    const [open, setOpen] = useState(false);
 
     console.log("render");
 
@@ -19,10 +22,23 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, [elevated]);
 
+    let headerClass = "surface";
+
+    if (elevated) {
+        headerClass += " elevated";
+    }
+
+    if (open) {
+        headerClass += " elevated open";
+    }
+
     return (
-        <header className={elevated ? "surface elevated" : "surface"}>
+        <header className={headerClass}>
             <div className="container">
-                <p className="on-surface-text headline-small">mLukawski</p>
+                <button className="logo" onClick={() => verticalScroll("root", 0)}>
+                    <img src={Logo} alt="" height={32} />
+                    <p className="primary-text title-medium">mLukawski</p>
+                </button>
                 <nav>
                     <a className="text icon" href="https://github.com/Pomoc48">
                         <span className="material-symbols-outlined">code</span>
@@ -34,6 +50,9 @@ export default function Navbar() {
                     </a>
                 </nav>
             </div>
+            <button onClick={() => setOpen(!open)}>
+                <span className="material-symbols-outlined primary-text">menu</span>
+            </button>
         </header>
     );
 }

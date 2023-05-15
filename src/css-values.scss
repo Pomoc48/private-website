@@ -1,6 +1,6 @@
 $mobileSnap: 768px;
 $pageWidth: 1200px;
-$navbarHeight: 80px;
+$navbarHeight: 64px;
 
 @mixin ResponsiveLayout {
     width: $pageWidth;
