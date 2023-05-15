@@ -5,6 +5,7 @@ import { verticalScroll } from "../../functions/scroll";
 
 export default function Navbar() {
     const [elevated, setElevated] = useState(false);
+    const [open, setOpen] = useState(false);
 
     console.log("render");
 
@@ -21,10 +22,20 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, [elevated]);
 
+    let headerClass = "surface";
+
+    if (elevated) {
+        headerClass += " elevated";
+    }
+
+    if (open) {
+        headerClass += " elevated open";
+    }
+
     return (
-        <header className={elevated ? "surface elevated" : "surface"}>
+        <header className={headerClass}>
             <div className="container">
-                <button className="logo" onClick={() => verticalScroll("start", 0)}>
+                <button className="logo" onClick={() => verticalScroll("root", 0)}>
                     <img src={Logo} alt="" height={32} />
                     <p className="primary-text title-medium">mLukawski</p>
                 </button>
@@ -39,6 +50,9 @@ export default function Navbar() {
                     </a>
                 </nav>
             </div>
+            <button onClick={() => setOpen(!open)}>
+                <span className="material-symbols-outlined primary-text">menu</span>
+            </button>
         </header>
     );
 }

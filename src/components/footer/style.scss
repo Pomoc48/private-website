@@ -12,3 +12,13 @@ footer {
         padding-inline: 2rem;
     }
 }
+
+@media screen and (max-width: css-values.$mobileSnap) {
+    footer {
+        height: auto;
+
+        div.container {
+            padding: 1rem;
+        }
+    }
+}

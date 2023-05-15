@@ -13,7 +13,7 @@ export default function HomePage() {
     return (
         <>
             <Navbar />
-            <main id="start">
+            <main>
                 <article>
                     <p className="label-large primary-text">Hi, my name is</p>
                     <h1 className="display-small on-surface-text">Mikołaj Łukawski</h1>
