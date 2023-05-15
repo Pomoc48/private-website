@@ -1,5 +1,10 @@
 import Navbar from "../../components/navbar";
 import Photo from "../../assets/photo.jpg";
+import ISO from "../../assets/projects/iso.jpg";
+import Logger from "../../assets/projects/logger.png";
+import NoFussPrinting from "../../assets/projects/nofussprinting.png";
+import Passer from "../../assets/projects/passer.png";
+import Werapp from "../../assets/projects/werapp.png";
 import "./style.scss";
 
 export default function HomePage() {
@@ -34,7 +39,7 @@ export default function HomePage() {
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">
-                        <img src="https://picsum.photos/400/500" alt="" />
+                        <img src={NoFussPrinting} alt="" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
                             <p className="body-medium on-surface-text">
@@ -47,7 +52,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src="https://picsum.photos/400/500" alt="" />
+                        <img src={Passer} alt="" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Passer</h3>
                             <p className="body-medium on-surface-text">
@@ -60,7 +65,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src="https://picsum.photos/400/500" alt="" />
+                        <img src={Logger} alt="" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Logger</h3>
                             <p className="body-medium on-surface-text">
@@ -73,7 +78,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src="https://picsum.photos/400/500" alt="" />
+                        <img src={Werapp} alt="" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Werapp</h3>
                             <p className="body-medium on-surface-text">
@@ -86,7 +91,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src="https://picsum.photos/400/500" alt="" />
+                        <img src={ISO} alt="" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Iso</h3>
                             <p className="body-medium on-surface-text">
