@@ -6,6 +6,7 @@
 
 header {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,10 +22,13 @@ header {
         justify-content: space-between;
         @include css-values.ResponsiveLayout;
 
-        div {
+        button.logo {
+            all: unset;
+            height: inherit;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            @include css-values.Clickable;
         }
 
         p.headline-small {

@@ -6,12 +6,13 @@ import NoFussPrinting from "../assets/projects/nofussprinting.png";
 import Passer from "../assets/projects/passer.png";
 import Werapp from "../assets/projects/werapp.png";
 import "./style.scss";
+import { verticalScroll } from "../functions/scroll";
 
 export default function HomePage() {
     return (
         <>
             <Navbar />
-            <main>
+            <main id="start">
                 <article>
                     <p className="label-large primary-text">Hi, my name is</p>
                     <h1 className="display-small on-surface-text">Mikołaj Łukawski</h1>
@@ -20,7 +21,7 @@ export default function HomePage() {
                         understanding of creating responsive, consistent and intuitive user interfaces.
                     </p>
                     <nav>
-                        <button className="primary icon">
+                        <button className="primary icon" onClick={() => verticalScroll("portfolio", 136)}>
                             <span className="material-symbols-outlined">collections_bookmark</span>
                             <p className="label-large">Check my projects</p>
                         </button>
@@ -35,7 +36,7 @@ export default function HomePage() {
             <div className="divider-container">
                 <div className="outline-variant divider" />
             </div>
-            <section>
+            <section id="portfolio">
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">

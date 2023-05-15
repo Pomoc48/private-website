@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/logo.svg";
 import "./style.scss";
+import { verticalScroll } from "../../functions/scroll";
 
 export default function Navbar() {
     const [elevated, setElevated] = useState(false);
@@ -23,10 +24,10 @@ export default function Navbar() {
     return (
         <header className={elevated ? "surface elevated" : "surface"}>
             <div className="container">
-                <div>
-                    <img src={Logo} alt="" height={40} />
-                    <p className="primary-text title-large">mLukawski</p>
-                </div>
+                <button className="logo" onClick={() => verticalScroll("start", 0)}>
+                    <img src={Logo} alt="" height={32} />
+                    <p className="primary-text title-medium">mLukawski</p>
+                </button>
 
                 <nav>
                     <a className="text icon" href="https://github.com/Pomoc48">
