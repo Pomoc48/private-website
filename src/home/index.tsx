@@ -1,10 +1,10 @@
-import Navbar from "../../components/navbar";
-import Photo from "../../assets/photo.jpg";
-import ISO from "../../assets/projects/iso.jpg";
-import Logger from "../../assets/projects/logger.png";
-import NoFussPrinting from "../../assets/projects/nofussprinting.png";
-import Passer from "../../assets/projects/passer.png";
-import Werapp from "../../assets/projects/werapp.png";
+import Navbar from "../components/navbar";
+import Photo from "../assets/photo.jpg";
+import ISO from "../assets/projects/iso.jpg";
+import Logger from "../assets/projects/logger.png";
+import NoFussPrinting from "../assets/projects/nofussprinting.png";
+import Passer from "../assets/projects/passer.png";
+import Werapp from "../assets/projects/werapp.png";
 import "./style.scss";
 
 export default function HomePage() {
