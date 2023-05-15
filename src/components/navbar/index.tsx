@@ -28,7 +28,6 @@ export default function Navbar() {
                     <img src={Logo} alt="" height={32} />
                     <p className="primary-text title-medium">mLukawski</p>
                 </button>
-
                 <nav>
                     <a className="text icon" href="https://github.com/Pomoc48">
                         <span className="material-symbols-outlined">code</span>

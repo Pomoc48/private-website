@@ -7,6 +7,7 @@ import Passer from "../assets/projects/passer.png";
 import Werapp from "../assets/projects/werapp.png";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
+import Footer from "../components/footer";
 
 export default function HomePage() {
     return (
@@ -106,6 +107,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
