@@ -52,7 +52,6 @@ header {
 
         span.material-symbols-outlined {
             font-size: 24px;
-            margin-inline: auto;
         }
     }
 
@@ -82,7 +81,8 @@ header {
         }
 
         button {
-            display: block;
+            display: flex;
+            justify-content: center;
         }
     }
 }
