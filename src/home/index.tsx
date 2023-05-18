@@ -32,7 +32,7 @@ export default function HomePage() {
                         </a>
                     </nav>
                 </article>
-                <img src={Photo} width={400} height={400} alt="Logo" />
+                <img src={Photo} width={400} height={400} alt="Mikołaj Łukawski" />
             </main>
             <div className="divider-container">
                 <div className="outline-variant divider" />
@@ -41,7 +41,7 @@ export default function HomePage() {
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">
-                        <img src={NoFussPrinting} alt="" />
+                        <img src={NoFussPrinting} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
                             <p className="body-medium on-surface-text">
@@ -54,7 +54,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Passer} alt="" />
+                        <img src={Passer} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Passer</h3>
                             <p className="body-medium on-surface-text">
@@ -67,7 +67,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Logger} alt="" />
+                        <img src={Logger} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Logger</h3>
                             <p className="body-medium on-surface-text">
@@ -80,7 +80,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Werapp} alt="" />
+                        <img src={Werapp} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Werapp</h3>
                             <p className="body-medium on-surface-text">
@@ -93,7 +93,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={ISO} alt="" />
+                        <img src={ISO} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Iso</h3>
                             <p className="body-medium on-surface-text">
