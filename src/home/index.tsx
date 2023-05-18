@@ -1,10 +1,10 @@
 import Navbar from "../components/navbar";
-import Photo from "../assets/photo.jpg";
-import ISO from "../assets/projects/iso.jpg";
-import Logger from "../assets/projects/logger.png";
-import NoFussPrinting from "../assets/projects/nofussprinting.png";
-import Passer from "../assets/projects/passer.png";
-import Werapp from "../assets/projects/werapp.png";
+import Photo from "../assets/photo.webp";
+import ISO from "../assets/projects/iso.webp";
+import Logger from "../assets/projects/logger.webp";
+import NoFussPrinting from "../assets/projects/nofussprinting.webp";
+import Passer from "../assets/projects/passer.webp";
+import Werapp from "../assets/projects/werapp.webp";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
 import Footer from "../components/footer";
