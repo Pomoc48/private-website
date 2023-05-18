@@ -36,7 +36,7 @@ export default function Navbar() {
         <header className={headerClass}>
             <div className="container">
                 <button className="logo" onClick={() => verticalScroll("root", 64)}>
-                    <img src={Logo} alt="" height={32} />
+                    <img src={Logo} alt="Logo" height={32} />
                     <p className="primary-text title-medium">mLukawski</p>
                 </button>
                 <nav>
