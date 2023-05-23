@@ -60,7 +60,7 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Open-source and self-hostable secure password manager
                             </p>
-                            <a className="primary icon" href="https://passer.lukawski.xyz">
+                            <a className="primary icon" href="https://passer.mlukawski.com">
                                 <span className="material-symbols-outlined">open_in_new</span>
                                 <p className="label-large">Visit the website</p>
                             </a>
@@ -73,7 +73,7 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Flutter mobile and web app, used for tracking life events or activities
                             </p>
-                            <a className="primary icon" href="https://loggerapp.lukawski.xyz">
+                            <a className="primary icon" href="https://logger.mlukawski.com">
                                 <span className="material-symbols-outlined">open_in_new</span>
                                 <p className="label-large">Visit the website</p>
                             </a>
