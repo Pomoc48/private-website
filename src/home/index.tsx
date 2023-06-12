@@ -47,9 +47,14 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 React website for a Polish 3D printing company
                             </p>
-                            <a className="primary icon" href="https://web.pre.nofussprinting.pl">
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://web.pre.nofussprinting.pl"
+                                rel="noreferrer"
+                            >
                                 <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Visit the website</p>
+                                <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
@@ -60,9 +65,14 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Open-source and self-hostable secure password manager
                             </p>
-                            <a className="primary icon" href="https://passer.mlukawski.com">
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://passer.mlukawski.com"
+                                rel="noreferrer"
+                            >
                                 <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Visit the website</p>
+                                <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
@@ -73,9 +83,14 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Flutter mobile and web app, used for tracking life events or activities
                             </p>
-                            <a className="primary icon" href="https://logger.mlukawski.com">
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://play.google.com/store/apps/details?id=com.mlukawski.logger"
+                                rel="noreferrer"
+                            >
                                 <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Visit the website</p>
+                                <p className="label-large">Play Store</p>
                             </a>
                         </div>
                     </div>
@@ -86,9 +101,14 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Flutter app for friends and couples that does various different things
                             </p>
-                            <a className="primary icon" href="https://github.com/Pomoc48/werapp">
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://github.com/Pomoc48/werapp"
+                                rel="noreferrer"
+                            >
                                 <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Check the repo</p>
+                                <p className="label-large">GitHub</p>
                             </a>
                         </div>
                     </div>
@@ -99,9 +119,14 @@ export default function HomePage() {
                             <p className="body-medium on-surface-text">
                                 Mobile game with an orthogonal camera projection that changes colours and perspectives
                             </p>
-                            <a className="primary icon" href="https://github.com/Pomoc48/iso-game">
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://github.com/Pomoc48/iso-game"
+                                rel="noreferrer"
+                            >
                                 <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Check the repo</p>
+                                <p className="label-large">GitHub</p>
                             </a>
                         </div>
                     </div>
