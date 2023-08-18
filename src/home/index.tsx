@@ -4,7 +4,6 @@ import ISO from "../assets/projects/iso.webp";
 import Logger from "../assets/projects/logger.webp";
 import NoFussPrinting from "../assets/projects/nofussprinting.webp";
 import Passer from "../assets/projects/passer.webp";
-import Werapp from "../assets/projects/werapp.webp";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
 import Footer from "../components/footer";
@@ -41,24 +40,6 @@ export default function HomePage() {
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">
-                        <img src={NoFussPrinting} alt="" loading="lazy" />
-                        <div className="details">
-                            <h3 className="title-large on-surface-text">NoFussPrinting</h3>
-                            <p className="body-medium on-surface-text">
-                                React website for a Polish 3D printing company
-                            </p>
-                            <a
-                                className="primary icon"
-                                target="_blank"
-                                href="https://web.pre.nofussprinting.pl"
-                                rel="noreferrer"
-                            >
-                                <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Website</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card">
                         <img src={Passer} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">Passer</h3>
@@ -69,6 +50,24 @@ export default function HomePage() {
                                 className="primary icon"
                                 target="_blank"
                                 href="https://passer.mlukawski.com"
+                                rel="noreferrer"
+                            >
+                                <span className="material-symbols-outlined">open_in_new</span>
+                                <p className="label-large">Website</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={NoFussPrinting} alt="" loading="lazy" />
+                        <div className="details">
+                            <h3 className="title-large on-surface-text">NoFussPrinting</h3>
+                            <p className="body-medium on-surface-text">
+                                React website for a Polish 3D printing company
+                            </p>
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://web.pre.nofussprinting.pl"
                                 rel="noreferrer"
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
@@ -91,24 +90,6 @@ export default function HomePage() {
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
                                 <p className="label-large">Play Store</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src={Werapp} alt="" loading="lazy" />
-                        <div className="details">
-                            <h3 className="title-large on-surface-text">Werapp</h3>
-                            <p className="body-medium on-surface-text">
-                                Flutter app for friends and couples that does various different things
-                            </p>
-                            <a
-                                className="primary icon"
-                                target="_blank"
-                                href="https://github.com/Pomoc48/werapp"
-                                rel="noreferrer"
-                            >
-                                <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">GitHub</p>
                             </a>
                         </div>
                     </div>
