@@ -58,24 +58,6 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Passer} alt="" loading="lazy" />
-                        <div className="details">
-                            <h3 className="title-large on-surface-text">Passer</h3>
-                            <p className="body-medium on-surface-text">
-                                Free, open-source and self-hosted password manager.
-                            </p>
-                            <a
-                                className="primary icon"
-                                target="_blank"
-                                href="https://passer.mlukawski.com"
-                                rel="noreferrer"
-                            >
-                                <span className="material-symbols-outlined">open_in_new</span>
-                                <p className="label-large">Website</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="card">
                         <img src={NoFussPrinting} alt="" loading="lazy" />
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
@@ -86,6 +68,24 @@ export default function HomePage() {
                                 className="primary icon"
                                 target="_blank"
                                 href="https://web.pre.nofussprinting.pl"
+                                rel="noreferrer"
+                            >
+                                <span className="material-symbols-outlined">open_in_new</span>
+                                <p className="label-large">Website</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={Passer} alt="" loading="lazy" />
+                        <div className="details">
+                            <h3 className="title-large on-surface-text">Passer</h3>
+                            <p className="body-medium on-surface-text">
+                                Free, open-source and self-hosted password manager.
+                            </p>
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://passer.mlukawski.com"
                                 rel="noreferrer"
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
