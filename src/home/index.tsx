@@ -4,6 +4,7 @@ import ISO from "../assets/projects/iso.webp";
 import Logger from "../assets/projects/logger.webp";
 import NoFussPrinting from "../assets/projects/nofussprinting.webp";
 import Passer from "../assets/projects/passer.webp";
+import ByHeart from "../assets/projects/byheart.webp";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
 
@@ -39,16 +40,16 @@ export default function HomePage() {
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">
-                        <img src={Passer} alt="" loading="lazy" />
+                        <img src={ByHeart} alt="" loading="lazy" />
                         <div className="details">
-                            <h3 className="title-large on-surface-text">Passer</h3>
+                            <h3 className="title-large on-surface-text">byHeart</h3>
                             <p className="body-medium on-surface-text">
-                                Free, open-source and self-hosted password manager.
+                                The design and functionality of a flashcards language learning app.
                             </p>
                             <a
                                 className="primary icon"
                                 target="_blank"
-                                href="https://passer.mlukawski.com"
+                                href="https://byheart.io/"
                                 rel="noreferrer"
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
@@ -66,7 +67,25 @@ export default function HomePage() {
                             <a
                                 className="primary icon"
                                 target="_blank"
-                                href="https://web.pre.nofussprinting.pl"
+                                href="https://nofussprinting.pl"
+                                rel="noreferrer"
+                            >
+                                <span className="material-symbols-outlined">open_in_new</span>
+                                <p className="label-large">Website</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={Passer} alt="" loading="lazy" />
+                        <div className="details">
+                            <h3 className="title-large on-surface-text">Passer</h3>
+                            <p className="body-medium on-surface-text">
+                                Free, open-source and self-hosted password manager.
+                            </p>
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://passer.mlukawski.com"
                                 rel="noreferrer"
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
