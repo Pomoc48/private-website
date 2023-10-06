@@ -67,7 +67,7 @@ export default function HomePage() {
                             <a
                                 className="primary icon"
                                 target="_blank"
-                                href="https://web.pre.nofussprinting.pl"
+                                href="https://nofussprinting.pl"
                                 rel="noreferrer"
                             >
                                 <span className="material-symbols-outlined">open_in_new</span>
