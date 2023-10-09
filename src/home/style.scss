@@ -68,13 +68,20 @@ section {
             transition: 0.3s;
             background-color: var(--md-sys-elevation-2);
 
-            img {
+            .wrapper {
                 width: inherit;
-                object-fit: cover;
                 aspect-ratio: 1.5 / 1;
-                height: auto;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
+                overflow: hidden;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: 0.3s scale;
+                scale: 1.01;
             }
 
             div.details {
@@ -95,6 +102,10 @@ section {
 
             &:hover {
                 background-color: var(--md-sys-elevation-5);
+
+                img {
+                    scale: 1.15;
+                }
             }
         }
     }

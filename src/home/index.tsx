@@ -40,7 +40,9 @@ export default function HomePage() {
                 <h2 className="headline-small on-surface-text">Some of my previous work:</h2>
                 <div className="gallery">
                     <div className="card">
-                        <img src={ByHeart} alt="" loading="lazy" />
+                        <div className="wrapper">
+                            <img src={ByHeart} alt="" loading="lazy" />
+                        </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">byHeart</h3>
                             <p className="body-medium on-surface-text">
@@ -58,7 +60,9 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={NoFussPrinting} alt="" loading="lazy" />
+                        <div className="wrapper">
+                            <img src={NoFussPrinting} alt="" loading="lazy" />
+                        </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
                             <p className="body-medium on-surface-text">
@@ -76,7 +80,9 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Passer} alt="" loading="lazy" />
+                        <div className="wrapper">
+                            <img src={Passer} alt="" loading="lazy" />
+                        </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Passer</h3>
                             <p className="body-medium on-surface-text">
@@ -94,7 +100,9 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Logger} alt="" loading="lazy" />
+                        <div className="wrapper">
+                            <img src={Logger} alt="" loading="lazy" />
+                        </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Logger</h3>
                             <p className="body-medium on-surface-text">
@@ -112,7 +120,9 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={ISO} alt="" loading="lazy" />
+                        <div className="wrapper">
+                            <img src={ISO} alt="" loading="lazy" />
+                        </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Iso</h3>
                             <p className="body-medium on-surface-text">
