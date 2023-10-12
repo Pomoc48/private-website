@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import Photo from "../assets/photo.webp";
 import ISO from "../assets/projects/iso.webp";
 import Logger from "../assets/projects/logger.webp";
@@ -141,6 +142,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
