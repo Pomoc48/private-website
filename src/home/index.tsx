@@ -18,8 +18,9 @@ export default function HomePage() {
                     <p className="label-large primary-text">Hi, my name is</p>
                     <h1 className="display-small on-surface-text">Mikołaj Łukawski</h1>
                     <p className="body-large on-surface-text">
-                        I am a Frontend Developer who specializes mainly in Flutter and React, and has a good
-                        understanding of creating responsive, consistent and intuitive user interfaces.
+                        I am a Frontend Developer specializing in Flutter and React,
+                        with the knowledge of creating responsive,
+                        consistent and intuitive user interfaces.
                     </p>
                     <nav>
                         <button className="primary icon" onClick={() => verticalScroll("portfolio", 136)}>
