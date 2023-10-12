@@ -1,0 +1,15 @@
+@use "../../css-values.scss";
+
+footer {
+    background-color: var(--md-sys-elevation-1);
+    color: var(--md-sys-color-primary);
+
+    .container {
+        @include css-values.ResponsiveLayout;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: css-values.$mobileSnap) {
+            padding: 1rem;
+        }
+    }
+}
