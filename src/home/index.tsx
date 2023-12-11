@@ -6,6 +6,7 @@ import Logger from "../assets/projects/logger.webp";
 import NoFussPrinting from "../assets/projects/nofussprinting.webp";
 import Passer from "../assets/projects/passer.webp";
 import ByHeart from "../assets/projects/byheart.webp";
+import PrzepisyNaZdrowie from "../assets/projects/przepisynazdrowie.webp";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
 
@@ -43,6 +44,26 @@ export default function HomePage() {
                 <div className="gallery">
                     <div className="card">
                         <div className="wrapper">
+                            <img src={PrzepisyNaZdrowie} alt="" loading="lazy" />
+                        </div>
+                        <div className="details">
+                            <h3 className="title-large on-surface-text">Przepisy Na Zdrowie</h3>
+                            <p className="body-medium on-surface-text">
+                                WordPress website for a dietitian, based on an existing design.
+                            </p>
+                            <a
+                                className="primary icon"
+                                target="_blank"
+                                href="https://przepisynazdrowie.com/"
+                                rel="noreferrer"
+                            >
+                                <span className="material-symbols-outlined">open_in_new</span>
+                                <p className="label-large">Website</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="wrapper">
                             <img src={ByHeart} alt="" loading="lazy" />
                         </div>
                         <div className="details">
@@ -68,7 +89,7 @@ export default function HomePage() {
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
                             <p className="body-medium on-surface-text">
-                                Website design and code for NoFussPrinting, a 3D printing company.
+                                Website design and code for a 3D printing company.
                             </p>
                             <a
                                 className="primary icon"

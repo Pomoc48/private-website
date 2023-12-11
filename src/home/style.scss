@@ -23,6 +23,10 @@ main {
             margin-bottom: 4px;
         }
 
+        p.body-large {
+            line-height: 23px;
+        }
+
         nav {
             display: flex;
             gap: 1rem;
@@ -93,6 +97,7 @@ section {
 
                 p {
                     margin-bottom: 2rem;
+                    line-height: 20px;
                 }
 
                 a {
