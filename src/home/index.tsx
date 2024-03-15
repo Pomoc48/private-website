@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Photo from "../assets/photo.webp";
 import ISO from "../assets/projects/iso.webp";
 import Logger from "../assets/projects/logger.webp";
 import NoFussPrinting from "../assets/projects/nofussprinting.webp";
@@ -37,7 +36,7 @@ export default function HomePage() {
                         </a>
                     </nav>
                 </article>
-                <img src={Photo} width={400} height={400} alt="Mikołaj Łukawski" />
+                <img src="photo.webp" width={400} height={400} alt="Mikołaj Łukawski" />
             </main>
             <div className="divider-container">
                 <div className="outline-variant divider" />
