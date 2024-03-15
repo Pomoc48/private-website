@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Photo from "../assets/photo.webp";
 import ISO from "../assets/projects/iso.webp";
 import Logger from "../assets/projects/logger.webp";
 import NoFussPrinting from "../assets/projects/nofussprinting.webp";
@@ -9,6 +8,9 @@ import ByHeart from "../assets/projects/byheart.webp";
 import PrzepisyNaZdrowie from "../assets/projects/przepisynazdrowie.webp";
 import "./style.scss";
 import { verticalScroll } from "../functions/scroll";
+import { ReactComponent as CollectionsIcon } from "../assets/icons/collections_bookmark.svg";
+import { ReactComponent as EmailIcon } from "../assets/icons/alternate_email.svg";
+import { ReactComponent as OpenInNewIcon } from "../assets/icons/open_in_new.svg";
 
 export default function HomePage() {
     return (
@@ -25,16 +27,16 @@ export default function HomePage() {
                     </p>
                     <nav>
                         <button className="primary icon" onClick={() => verticalScroll("portfolio", 136)}>
-                            <span className="material-symbols-outlined">collections_bookmark</span>
+                            <CollectionsIcon />
                             <p className="label-large">Check my projects</p>
                         </button>
                         <a className="tonal icon" href="mailto:lukawski.mikolaj@gmail.com">
-                            <span className="material-symbols-outlined">alternate_email</span>
+                            <EmailIcon />
                             <p className="label-large">Contact me</p>
                         </a>
                     </nav>
                 </article>
-                <img src={Photo} width={400} height={400} alt="Mikołaj Łukawski" />
+                <img src="photo.webp" width={400} height={400} alt="Mikołaj Łukawski" />
             </main>
             <div className="divider-container">
                 <div className="outline-variant divider" />
@@ -44,7 +46,7 @@ export default function HomePage() {
                 <div className="gallery">
                     <div className="card">
                         <div className="wrapper">
-                            <img src={PrzepisyNaZdrowie} alt="" loading="lazy" />
+                            <img src={PrzepisyNaZdrowie} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Przepisy Na Zdrowie</h3>
@@ -57,14 +59,14 @@ export default function HomePage() {
                                 href="https://przepisynazdrowie.com/"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
                     <div className="card">
                         <div className="wrapper">
-                            <img src={ByHeart} alt="" loading="lazy" />
+                            <img src={ByHeart} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">byHeart</h3>
@@ -77,14 +79,14 @@ export default function HomePage() {
                                 href="https://byheart.io/"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
                     <div className="card">
                         <div className="wrapper">
-                            <img src={NoFussPrinting} alt="" loading="lazy" />
+                            <img src={NoFussPrinting} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">NoFussPrinting</h3>
@@ -97,14 +99,14 @@ export default function HomePage() {
                                 href="https://nofussprinting.pl"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
                     <div className="card">
                         <div className="wrapper">
-                            <img src={Passer} alt="" loading="lazy" />
+                            <img src={Passer} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Passer</h3>
@@ -117,14 +119,14 @@ export default function HomePage() {
                                 href="https://passer.mlukawski.com"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">Website</p>
                             </a>
                         </div>
                     </div>
                     <div className="card">
                         <div className="wrapper">
-                            <img src={Logger} alt="" loading="lazy" />
+                            <img src={Logger} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Logger</h3>
@@ -137,14 +139,14 @@ export default function HomePage() {
                                 href="https://play.google.com/store/apps/details?id=com.mlukawski.logger"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">Play Store</p>
                             </a>
                         </div>
                     </div>
                     <div className="card">
                         <div className="wrapper">
-                            <img src={ISO} alt="" loading="lazy" />
+                            <img src={ISO} alt="" loading="lazy" width={360} height={250} />
                         </div>
                         <div className="details">
                             <h3 className="title-large on-surface-text">Iso</h3>
@@ -157,7 +159,7 @@ export default function HomePage() {
                                 href="https://github.com/Pomoc48/iso-game"
                                 rel="noreferrer"
                             >
-                                <span className="material-symbols-outlined">open_in_new</span>
+                                <OpenInNewIcon />
                                 <p className="label-large">GitHub</p>
                             </a>
                         </div>
