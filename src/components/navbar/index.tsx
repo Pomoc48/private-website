@@ -12,7 +12,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const onScroll = () => {
-            if (window.pageYOffset !== 0) {
+            if (window.scrollY !== 0) {
                 setElevated(true);
             } else {
                 setElevated(false);
@@ -51,7 +51,7 @@ export default function Navbar() {
                     </a>
                 </nav>
             </div>
-            <button onClick={() => setOpen(!open)}>
+            <button onClick={() => setOpen(!open)} aria-label="Open menu">
                 <MenuIcon />
             </button>
         </header>

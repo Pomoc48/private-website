@@ -28,6 +28,8 @@ $navbarHeight: 64px;
     border-radius: 40px;
     transition: 0.3s;
     align-items: center;
+    outline-offset: 4px;
+    outline: 2px solid transparent;
 
     p {
         margin: 0 !important;
@@ -52,6 +54,7 @@ $navbarHeight: 64px;
 
     &.text {
         color: var(--md-sys-color-primary);
+        outline-offset: 0px;
 
         &:hover {
             background-color: var(--md-sys-elevation-5);
@@ -67,6 +70,7 @@ $navbarHeight: 64px;
     &.tonal {
         background-color: var(--md-sys-elevation-2);
         color: var(--md-sys-color-primary);
+        outline-offset: 0px;
 
         &:hover {
             background-color: var(--md-sys-elevation-5);
@@ -77,5 +81,9 @@ $navbarHeight: 64px;
                 fill: var(--md-sys-color-primary);
             }
         }
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--md-sys-color-primary);
     }
 }

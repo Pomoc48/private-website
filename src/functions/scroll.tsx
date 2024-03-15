@@ -9,7 +9,7 @@ export function verticalScroll(elementId: string, offset: number = 0) {
     if (element === null) return;
 
     let elementPosition = element.getBoundingClientRect().top;
-    let finalPosition = elementPosition + window.pageYOffset - offset;
+    let finalPosition = elementPosition + window.scrollY - offset;
     let maxPosition = document.body.offsetHeight - window.innerHeight;
 
     if (finalPosition < 0) finalPosition = 0;
