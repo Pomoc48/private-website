@@ -33,8 +33,13 @@ $navbarHeight: 64px;
         margin: 0 !important;
     }
 
-    .material-symbols-outlined {
-        font-size: 16px;
+    svg {
+        width: 16px;
+        height: 16px;
+
+        path {
+            fill: var(--md-sys-color-on-primary);
+        }
     }
 
     &:hover {
@@ -51,6 +56,12 @@ $navbarHeight: 64px;
         &:hover {
             background-color: var(--md-sys-elevation-5);
         }
+
+        svg {
+            path {
+                fill: var(--md-sys-color-primary);
+            }
+        }
     }
 
     &.tonal {
@@ -59,6 +70,12 @@ $navbarHeight: 64px;
 
         &:hover {
             background-color: var(--md-sys-elevation-5);
+        }
+
+        svg {
+            path {
+                fill: var(--md-sys-color-primary);
+            }
         }
     }
 }

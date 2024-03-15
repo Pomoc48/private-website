@@ -38,6 +38,15 @@ header {
         nav {
             display: flex;
             gap: 0.5rem;
+
+            svg {
+                width: 16px;
+                height: 16px;
+
+                path {
+                    fill: var(--md-sys-color-primary);
+                }
+            }
         }
     }
 
@@ -50,8 +59,13 @@ header {
         width: css-values.$navbarHeight;
         padding: 0;
 
-        span.material-symbols-outlined {
-            font-size: 24px;
+        svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+                fill: var(--md-sys-color-primary);
+            }
         }
     }
 
